@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #530054;
+  transform-origin: 0%;
+  height: 10px;
+}
+
+/* .swiper-button-next {
+  font-size: 20px !important;
+  right: 0;
+  color: purple;
+}
+
+.swiper-button-prev {
+  font-size: 20px !important;
+  color: purple;
+  position: absolute;
+  left: -20px;
+  z-index: 10000;
+} */
+
+.swiper-pagination {
+  margin-left: -85px !important;
+}
+
+@media screen and (max-width: 1025px) {
+  .swiper-pagination {
+    margin-left: 60px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  font-size: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px lightgray solid;
+  border-radius: 50% !important;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  height: 10px !important;
+  width: 10px !important;
+  background-color: white;
+  margin-top: -30px !important;
+}
+
+.swiper-slide {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 769px) {
+  .swiper-pagination {
+    margin-left: 0px !important;
+  }
+
+  .react-player {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .swiper-pagination {
+    margin-left: 0px !important;
+  }
+}
+
+.player-wrapper {
+  position: relative;
+  /* 720 / 1280 = 0.5625 */
+}
+
+.react-player {
+  width: 100% !important;
+}
