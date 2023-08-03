@@ -7,7 +7,7 @@ export const Hero = () => {
     <HeroComponent
       heading="Empower Our"
       subheading="and families to
-    prosper"
+      prosper"
       spanText="Women"
       descriptions="Lorem ipsum dolor sit amet consectetur. Sed scelerisque commodo
             nisldd amet dolor nulla eu fusce. Ridiculus viverra justo nisl

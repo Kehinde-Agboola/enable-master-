@@ -99,7 +99,7 @@ export const HeroComponent = ({
                 {heading} <HeadingSpan>{spanText}</HeadingSpan> {subheading}
               </HeroHeading>
               <HeroHeading image={image}>
-                <HeadingSpan>{about}</HeadingSpan> {subheading}
+                <HeadingSpan>{about}</HeadingSpan>
               </HeroHeading>
               {subtext}
               <HeroHeading2>{heading2}</HeroHeading2>
