@@ -9,7 +9,7 @@ const Glogos = styled.div`
 export const Partners = () => {
   return (
     <div>
-      <Container className="mt-10rem">
+      <Container className="mt-[10rem]">
         <Marquee pauseOnHover autoFill>
           <div>
             <Glogos>
