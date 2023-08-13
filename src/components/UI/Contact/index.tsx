@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 import { Container } from "../../shared";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { HeroComponent } from "../../atom/hero";
+// import { HeroComponent } from "../../atom/hero";
 import { Message } from "./Message";
 // import Hug from "../../../assets/hug.jpg";
 
