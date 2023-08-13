@@ -20,6 +20,7 @@ export default {
         "hero-pattern":
           "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('/src/assets/hero.svg')",
         join: "url('./src/assets/join.svg')",
+        hug: "linear-gradient(to right bottom, rgba('#171717',0.8), rgba('#171717',0.8)), url('/src/assets/hug.jpg')",
       },
     },
   },

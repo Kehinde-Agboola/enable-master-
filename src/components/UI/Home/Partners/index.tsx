@@ -4,12 +4,12 @@ import tw from "twin.macro";
 import { partnerLogos } from "../../../../constants";
 import { Container } from "../../../shared";
 const Glogos = styled.div`
-  ${tw`-mt-5 grid grid-cols-4 place-items-center gap-5 md:gap-10`}
+  ${tw`grid grid-cols-4 place-items-center gap-5 md:gap-10`}
 `;
 export const Partners = () => {
   return (
     <div>
-      <Container className="mt-[10rem]">
+      <Container>
         <Marquee pauseOnHover autoFill>
           <div>
             <Glogos>

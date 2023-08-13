@@ -1,0 +1,38 @@
+/* Define the style for the form elements */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  display: block;
+
+  /* border: 1px solid #ccc; */
+  font-family: Arial, sans-serif;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 2px solid #f1f1f1;
+  outline: none;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Define the style for the error messages */
+.error {
+  color: red;
+}
