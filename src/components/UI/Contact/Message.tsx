@@ -8,6 +8,7 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Email is required"),
   message: Yup.string().required("Message is required"),
   phone: Yup.string()
+    .matches(/[0, 9]$/, "invalid phone number")
     .phone("NG", "Invalid phone number")
     .required("Phone number is required"),
 });
@@ -27,14 +28,17 @@ type FormValues = typeof initialValues;
 interface FormProps {
   onSubmit: (values: FormValues) => void;
 }
+const handleSubmit = async (formValues: Record<string, any>) => {
+  console.log("form values", formValues);
+};
 
 // Create the form component using Formik
-export const Message: React.FC<FormProps> = ({ onSubmit }) => {
+export const Message: React.FC<FormProps> = () => {
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
         <Form>
@@ -44,26 +48,30 @@ export const Message: React.FC<FormProps> = ({ onSubmit }) => {
             </h1>
           </div>
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Full Name*</label>
             <Field id="name" name="name" />
             <ErrorMessage name="name" />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email*</label>
             <Field id="email" name="email" type="email" />
             <ErrorMessage name="email" />
           </div>
           <div>
-            <label htmlFor="phone">Phone Number</label>
+            <label htmlFor="phone">Phone*</label>
             <Field id="phone" name="phone" type="tel" />
             <ErrorMessage name="phone" />
           </div>
           <div>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message*</label>
             <Field id="message" name="message" as="textarea" />
             <ErrorMessage name="message" />
           </div>
-          <button type="submit" disabled={isSubmitting}>
+          <button
+            className="button bg-white"
+            type="submit"
+            disabled={isSubmitting}
+          >
             Submit
           </button>
         </Form>
@@ -71,3 +79,4 @@ export const Message: React.FC<FormProps> = ({ onSubmit }) => {
     </Formik>
   );
 };
+console.log(Formik);

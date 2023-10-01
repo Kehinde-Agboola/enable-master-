@@ -17,12 +17,12 @@ export const Contact = () => {
           <div>
             <h1>Contact Works</h1>
             <Message
-              onSubmit={(values: {
+              onSubmit={function (values: {
                 name: string;
                 email: string;
                 message: string;
                 phone: string;
-              }): void => {
+              }): void {
                 throw new Error("Function not implemented.");
               }}
             />

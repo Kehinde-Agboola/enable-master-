@@ -1,11 +1,13 @@
-/* Define the style for the form elements */
 form {
-  max-width: 600px;
+  max-width: 594px;
+  height: 692px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 40px 60px 40px 60px;
   display: block;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* background: #ffff; */
+  background: red;
 
-  /* border: 1px solid #ccc; */
   font-family: Arial, sans-serif;
 }
 
@@ -19,20 +21,28 @@ label {
 }
 
 input,
+field,
 textarea {
   display: block;
-  width: 100%;
-  padding: 5px;
+  width: 100%; 
+  padding: 10rem;
   border-bottom: 2px solid #f1f1f1;
+  border-radius: 10px;
   outline: none;
 }
 
 button {
   display: block;
   margin-top: 10px;
+  height: 44px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  /* background: #530054; */
+  /* background: red; */
+  background: blue;
+  padding: 2rem 1rem;
 }
 
-/* Define the style for the error messages */
 .error {
   color: red;
 }
